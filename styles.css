@@ -1,0 +1,18 @@
+body{
+    background-color: aquamarine;
+    text-decoration: black;
+    text-decoration-line: underline;
+    text-align: center;
+}
+
+.btn-img{
+    background-color: red;
+    position: absolute;
+    align-items: end;
+    margin-left: 200px;
+    margin-top: -50px;
+    height: 100px;
+    width: 100px;
+    
+}
+
