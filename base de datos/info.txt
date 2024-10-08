@@ -1,0 +1,9 @@
+pip install Flask
+
+
+/escuela
+    /templates
+        index.html
+        login.html
+        forum.html
+    app.py
