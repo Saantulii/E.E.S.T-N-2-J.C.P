@@ -1,0 +1,36 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+}
+
+.article-container {
+    position: relative; /* Permite posicionar elementos dentro del artículo */
+    width: 100%; /* Ancho del contenedor */
+    overflow: hidden; /* Oculta cualquier contenido que se salga del contenedor */
+}
+
+.article-container img {
+    width: 100%; /* Asegura que la imagen ocupe todo el contenedor */
+    height: auto; /* Mantiene la relación de aspecto de la imagen */
+}
+
+.p-bienvenido {
+    position: absolute; /* Posiciona el texto de manera absoluta */
+    top: 20px; /* Ajusta la distancia desde la parte superior */
+    left: 20px; /* Ajusta la distancia desde la izquierda */
+    color: white; /* Color del texto */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para el texto */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 30px;
+}
+
+.img-estudiantes{
+    width: 100%;
+    height: auto;
+}

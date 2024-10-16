@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="calendario.css">
+    <script src="calendario.js"> defer</script>
+    <title>Tesla - Calendario</title>
+</head>
+<body>
+    <header>
+
+        <div class="header2">
+            <a href="https://www.facebook.com/eest2jcp" target="_blank">
+                <img src="tesla escudo.jpg" alt="escudo de tecnica" class="img-tesla"></a>
+            <h1 class="titulo">TESLA</h1>
+            <a href="Login.html"><button class="btn-inicio"> 
+            <img src="person-add-sharp.svg" alt="imagen de inico de sesion"></button>    
+            </a>
+        </div>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html"><btn>INICIO</btn></a>
+                    <a href="novedades.html"><btn>NOVEDADES</btn></a>
+                    <a href="cursos.html"><btn>CURSOS</btn></a>
+                    <a href="nosotros.html"><btn>NOSOTROS</btn></a>
+                    <a href="calendario.html"><btn>CALENDARIO</btn></a>
+                    <a href="inscripciones.html"><btn>INSCRIPCIONES</btn></a>
+                    <a href="cd.html"><btn>CENTRO DE ESTUDIANTES</btn></a>
+                </li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <h2>Calendario 2024</h2>
+    <div class="calendar">
+        <div class="month" id="month1">
+            <h2>Enero</h2>
+            <div class="days">
+                <div class="day-name">Lun</div>
+                <div class="day-name">Mar</div>
+                <div class="day-name">Mié</div>
+                <div class="day-name">Jue</div>
+                <div class="day-name">Vie</div>
+                <div class="day-name">Sáb</div>
+                <div class="day-name">Dom</div>
+                <div class="feriado" onclick="showModal('Año Nuevo')">1</div>
+                <div class="day">2</div>
+                <div class="day">3</div>
+                <div class="day">4</div>
+                <div class="day">5</div>
+                <div class="feriado" onclick="showModal('Día de Reyes')">6</div>
+                <div class="day">7</div>
+                <div class="day">8</div>
+                <div class="day">9</div>
+                <div class="day">10</div>
+                <div class="day">11</div>
+                <div class="day">12</div>
+                <div class="day">13</div>
+                <div class="day">14</div>
+                <div class="day">15</div>
+                <div class="day">16</div>
+                <div class="day">17</div>
+                <div class="day">18</div>
+                <div class="day">19</div>
+                <div class="day">20</div>
+                <div class="day">21</div>
+                <div class="day">22</div>
+                <div class="day">23</div>
+                <div class="day">24</div>
+                <div class="day">25</div>
+                <div class="day">26</div>
+                <div class="day">27</div>
+                <div class="day">28</div>
+                <div class="day">29</div>
+                <div class="day">30</div>
+                <div class="day">31</div>
+            </div>
+        </div>
+        <div class="month" id="month2">
+            <h2>Febrero</h2>
+            <div class="days">
+                <div class="day-name">Lun</div>
+                <div class="day-name">Mar</div>
+                <div class="day-name">Mié</div>
+                <div class="day-name">Jue</div>
+                <div class="day-name">Vie</div>
+                <div class="day-name">Sáb</div>
+                <div class="day-name">Dom</div>
+                <div class="day">1</div>
+                <div class="day">2</div>
+                <div class="day">3</div>
+                <div class="day">4</div>
+                <div class="day">5</div>
+                <div class="day">6</div>
+                <div class="day">7</div>
+                <div class="day">8</div>
+                <div class="day">9</div>
+                <div class="day">10</div>
+                <div class="day">11</div>
+                <div class="day">12</div>
+                <div class="day">13</div>
+                <div class="feriado" onclick="showModal('Día de los Enamorados')">14</div>
+                <div class="day">15</div>
+                <div class="day">16</div>
+                <div class="day">17</div>
+                <div class="day">18</div>
+                <div class="day">19</div>
+                <div class="feriado" onclick="showModal('Día del Amigo')">20</div>
+                <div class="day">21</div>
+                <div class="day">22</div>
+                <div class="day">23</div>
+                <div class="day">24</div>
+                <div class="day">25</div>
+                <div class="day">26</div>
+                <div class="day">27</div>
+                <div class="day">28</div>
+                <div class="day">29</div>
+            </div>
+        </div>
+        <div class="month" id="month3">
+            <h2>Marzo</h2>
+            <div class="days">
+                <div class="day-name">Lun</div>
+                <div class="day-name">Mar</div>
+                <div class="day-name">Mié</div>
+                <div class="day-name">Jue</div>
+                <div class="day-name">Vie</div>
+                <div class="day-name">Sáb</div>
+                <div class="day-name">Dom</div>
+                <div class="day">1</div>
+                <div class="day">2</div>
+                <div class="day">3</div>
+                <div class="day">4</div>
+                <div class="day">5</div>
+                <div class="day">6</div>
+                <div class="day">7</div>
+                <div class="day">8</div>
+                <div class="day">9</div>
+                <div class="day">10</div>
+                <div class="day">11</div>
+                <div class="day">12</div>
+                <div class="day">13</div>
+                <div class="day">14</div>
+                <div class="day">15</div>
+                <div class="day">16</div>
+                <div class="day">17</div>
+                <div class="day">18</div>
+                <div class="day">19</div>
+                <div class="day">20</div>
+                <div class="day">21</div>
+                <div class="day">22</div>
+                <div class="day">23</div>
+                <div class="feriado" onclick="showMoferiado('Día Nacional de la Memoria por la Verdad y la Justicia')">24</div>
+                <div class="day">25</div>
+                <div class="day">26</div>
+                <div class="day">27</div>
+                <div class="day">28</div>
+                <div class="day">29</div>
+                <div class="day">30</div>
+                <div class="day">31</div>
+            </div>
+        </div>
+        <div class="month" id="month4">
+            <h2>Abril</h2>
+            <div class="days">
+                <div class="day-name">Lun</div>
+                <div class="day-name">Mar</div>
+                <div class="day-name">Mié</div>
+                <div class="day-name">Jue</div>
+                <div class="day-name">Vie</div>
+                <div class="day-name">Sáb</div>
+                <div class="day-name">Dom</div>
+                <div class="day">1</div>
+                <div class="feriado" onclick="showModal('Día del Veterano y de los Caídos en la Guerra de Malvinas')">2</div>
+                <div class="day">3</div>
+                <div class="day">4</div>
+                <div class="day">5</div>
+                <div class="day">6</div>
+                <div class="feriado" onclick="showModal('Día del Veterano de Guerra')">7</div>
+                <div class="day">8</div>
+                <div class="day">9</div>
+                <div class="day">10</div>
+                <div class="day">11</div>
+                <div class="day">12</div>
+                <div class="day">13</div>
+                <div class="day">14</div>
+                <div class="day">15</div>
+                <div class="day">16</div>
+                <div class="day">17</div>
+                <div class="day">18</div>
+                <div class="day">19</div>
+                <div class="day">20</div>
+                <div class="day">21</div>
+                <div class="day">22</div>
+                <div class="day">23</div>
+                <div class="day">24</div>
+                <div class="day">25</div>
+                <div class="day">26</div>
+                <div class="day">27</div>
+                <div class="day">28</div>
+                <div class="day">29</div>
+                <div class="day">30</div>
+            </div>
+        </div>
+        <div class="month" id="month5">
+            <h2>Mayo</h2>
+            <div class="days">
+                <div class="day-name">Lun</div>
+                <div class="day-name">Mar</div>
+                <div class="day-name">Mié</div>
+                <div class="day-name">Jue</div>
+                <div class="day-name">Vie</div>
+                <div class="day-name">Sáb</div>
+                <div class="day-name">Dom</div>
+                <div class="feriado" onclick="showModal('Día del Trabajador')">1</div>
+                <div class="day">2</div>
+                <div class="day">3</div>
+                <div class="day">4</div>
+                <div class="day">5</div>
+                <div class="day">6</div>
+                <div class="day">7</div>
+                <div class="day">8</div>
+                <div class="day">9</div>
+                <div class="day">10</div>
+                <div class="day">11</div>
+                <div class="day">12</div>
+                <div class="day">13</div>
+                <div class="day">14</div>
+                <div class="day">15</div>
+                <div class="day">16</div>
+                <div class="day">17</div>
+                <div class="day">18</div>
+                <div class="day">19</div>
+                <div class="day">20</div>
+                <div class="day">21</div>
+                <div class="day">22</div>
+                <div class="day">23</div>
+                <div class="day">24</div>
+                <div class="feriado" onclick="showModal('Revolución de Mayo')">25</div>
+                <div class="day">26</div>
+                <div class="day">27</div>
+                <div class="day">28</div>
+                <div class="day">29</div>
+                <div class="day">30</div>
+                <div class="day">31</div>
+            </div>
+        </div>
+        <div class="month" id="month6">
+            <h2>Junio</h2>
+            <div class="days">
+                <div class="day-name">Lun</div>
+                <div class="day-name">Mar</div>
+                <div class="day-name">Mié</div>
+                <div class="day-name">Jue</div>
+                <div class="day-name">Vie</div>
+                <div class="day-name">Sáb</div>
+                <div class="day-name">Dom</div>
+                <div class="day">1</div>
+                <div class="day">2</div>
+                <div class="day">3</div>
+                <div class="day">4</div>
+                <div class="day">5</div>
+                <div class="day">6</div>
+                <div class="day">7</div>
+                <div class="day">8</div>
+                <div class="day">9</div>
+                <div class="day">10</div>
+                <div class="day">11</div>
+                <div class="day">12</div>
+                <div class="day">13</div>
+                <div class="day">14</div>
+                <div class="day">15</div>
+                <div class="feriado" onclick="showModal('Día del Padre')">16</div>
+                <div class="day">17</div>
+                <div class="day">18</div>
+                <div class="day">19</div>
+                <div class="feriado" onclick="showModal('Día de la Bandera')">20</div>
+                <div class="day">21</div>
+                <div class="day">22</div>
+                <div class="day">23</div>
+                <div class="day">24</div>
+                <div class="day">25</div>
+                <div class="day">26</div>
+                <div class="day">27</div>
+                <div class="day">28</div>
+                <div class="day">29</div>
+                <div class="day">30</div>
+            </div>
+        </div>
+        <div class="month" id="month7">
+            <h2>Julio</h2>
+            <div class="days">
+                <div class="day-name">Lun</div>
+                <div class="day-name">Mar</div>
+                <div class="day-name">Mié</div>
+                <div class="day-name">Jue</div>
+                <div class="day-name">Vie</div>
+                <div class="day-name">Sáb</div>
+                <div class="day-name">Dom</div>
+                <div class="day">1</div>
+                <div class="day">2</div>
+                <div class="day">3</div>
+                <div class="day">4</div>
+                <div class="day">5</div>
+                <div class="day">6</div>
+                <div class="day">7</div>
+                <div class="day">8</div>
+                <div class="feriado" onclick="showModal('Día de la Independencia')">9</div>
+                <div class="day">10</div>
+                <div class="day">11</div>
+                <div class="day">12</div>
+                <div class="day">13</div>
+                <div class="day">14</div>
+                <div class="day">15</div>
+                <div class="day">16</div>
+                <div class="day">17</div>
+                <div class="day">18</div>
+                <div class="day">19</div>
+                <div class="day">20</div>
+                <div class="day">21</div>
+                <div class="day">22</div>
+                <div class="day">23</div>
+                <div class="day">24</div>
+                <div class="day">25</div>
+                <div class="day">26</div>
+                <div class="day">27</div>
+                <div class="day">28</div>
+                <div class="day">29</div>
+                <div class="day">30</div>
+                <div class="day">31</div>
+            </div>
+        </div>
+        <div class="month" id="month8">
+            <h2>Agosto</h2>
+            <div class="days">
+                <div class="day-name">Lun</div>
+                <div class="day-name">Mar</div>
+                <div class="day-name">Mié</div>
+                <div class="day-name">Jue</div>
+                <div class="day-name">Vie</div>
+                <div class="day-name">Sáb</div>
+                <div class="day-name">Dom</div>
+                <div class="day">1</div>
+                <div class="feriado" onclick="showModal('Día de la Madre')">2</div>
+                <div class="day">3</div>
+                <div class="day">4</div>
+                <div class="day">5</div>
+                <div class="day">6</div>
+                <div class="day">7</div>
+                <div class="day">8</div>
+                <div class="day">9</div>
+                <div class="day">10</div>
+                <div class="day">11</div>
+                <div class="day">12</div>
+                <div class="day">13</div>
+                <div class="day">14</div>
+                <div class="day">15</div>
+                <div class="day">16</div>
+                <div class="day">17</div>
+                <div class="day">18</div>
+                <div class="day">19</div>
+                <div class="feriado" onclick="showModal('Día del Niño')">20</div>
+                <div class="day">21</div>
+                <div class="day">22</div>
+                <div class="day">23</div>
+                <div class="day">24</div>
+                <div class="day">25</div>
+                <div class="day">26</div>
+                <div class="day">27</div>
+                <div class="day">28</div>
+                <div class="day">29</div>
+                <div class="day">30</div>
+                <div class="day">31</div>
+            </div>
+        </div>
+        <div class="month" id="month9">
+            <h2>Septiembre</h2>
+            <div class="days">
+                <div class="day-name">Lun</div>
+                <div class="day-name">Mar</div>
+                <div class="day-name">Mié</div>
+                <div class="day-name">Jue</div>
+                <div class="day-name">Vie</div>
+                <div class="day-name">Sáb</div>
+                <div class="day-name">Dom</div>
+                <div class="day">1</div>
+                <div class="day">2</div>
+                <div class="day">3</div>
+                <div class="day">4</div>
+                <div class="day">5</div>
+                <div class="day">6</div>
+                <div class="day">7</div>
+                <div class="day">8</div>
+                <div class="day">9</div>
+                <div class="day">10</div>
+                <div class="feriado" onclick="showModal('Día del Preceptor')">11</div>
+                <div class="day">12</div>
+                <div class="day">13</div>
+                <div class="day">14</div>
+                <div class="day">15</div>
+                <div class="day">16</div>
+                <div class="feriado" onclick="showModal('Día del Profesor')">17</div>
+                <div class="day">18</div>
+                <div class="day">19</div>
+                <div class="day">20</div>
+                <div class="feriado" onclick="showModal('Día del Estudiante')">21</div>
+                <div class="day">22</div>
+                <div class="day">23</div>
+                <div class="day">24</div>
+                <div class="day">25</div>
+                <div class="day">26</div>
+                <div class="day">27</div>
+                <div class="day">28</div>
+                <div class="day">29</div>
+                <div class="day">30</div>
+            </div>
+        </div>
+        <div class="month" id="month10">
+            <h2>Octubre</h2>
+            <div class="days">
+                <div class="day-name">Lun</div>
+                <div class="day-name">Mar</div>
+                <div class="day-name">Mié</div>
+                <div class="day-name">Jue</div>
+                <div class="day-name">Vie</div>
+                <div class="day-name">Sáb</div>
+                <div class="day-name">Dom</div>
+                <div class="day">1</div>
+                <div class="day">2</div>
+                <div class="day">3</div>
+                <div class="day">4</div>
+                <div class="day">5</div>
+                <div class="day">6</div>
+                <div class="day">7</div>
+                <div class="day">8</div>
+                <div class="day">9</div>
+                <div class="day">10</div>
+                <div class="day">11</div>
+                <div class="day">12</div>
+                <div class="day">13</div>
+                <div class="day">14</div>
+                <div class="day">15</div>
+                <div class="day">16</div>
+                <div class="feriado" onclick="showModal('Día del Profesor')">17</div>
+                <div class="day">18</div>
+                <div class="day">19</div>
+                <div class="day">20</div>
+                <div class="day">21</div>
+                <div class="day">22</div>
+                <div class="day">23</div>
+                <div class="day">24</div>
+                <div class="day">25</div>
+                <div class="day">26</div>
+                <div class="day">27</div>
+                <div class="day">28</div>
+                <div class="day">29</div>
+                <div class="day">30</div>
+            </div>
+        </div>
+        <div class="month" id="month11">
+            <h2>Noviembre</h2>
+            <div class="days">
+                <div class="day-name">Lun</div>
+                <div class="day-name">Mar</div>
+                <div class="day-name">Mié</div>
+                <div class="day-name">Jue</div>
+                <div class="day-name">Vie</div>
+                <div class="day-name">Sáb</div>
+                <div class="day-name">Dom</div>
+                <div class="day">1</div>
+                <div class="day">2</div>
+                <div class="day">3</div>
+                <div class="day">4</div>
+                <div class="day">5</div>
+                <div class="day">6</div>
+                <div class="day">7</div>
+                <div class="day">8</div>
+                <div class="day">9</div>
+                <div class="feriado" onclick="showModal('Día de la Tradición')">10</div>
+                <div class="day">11</div>
+                <div class="day">12</div>
+                <div class="day">13</div>
+                <div class="day">14</div>
+                <div class="day">15</div>
+                <div class="day">16</div>
+                <div class="day">17</div>
+                <div class="day">18</div>
+                <div class="day">19</div>
+                <div class="day">20</div>
+                <div class="day">21</div>
+                <div class="day">22</div>
+                <div class="day">23</div>
+                <div class="day">24</div>
+                <div class="day">25</div>
+                <div class="day">26</div>
+                <div class="day">27</div>
+                <div class="day">28</div>
+                <div class="day">29</div>
+                <div class="day">30</div>
+            </div>
+        </div>
+        <div class="month" id="month12">
+            <h2>Diciembre</h2>
+            <div class="days">
+                <div class="day-name">Lun</div>
+                <div class="day-name">Mar</div>
+                <div class="day-name">Mié</div>
+                <div class="day-name">Jue</div>
+                <div class="day-name">Vie</div>
+                <div class="day-name">Sáb</div>
+                <div class="day-name">Dom</div>
+                <div class="day">1</div>
+                <div class="day">2</div>
+                <div class="day">3</div>
+                <div class="day">4</div>
+                <div class="day">5</div>
+                <div class="day">6</div>
+                <div class="day">7</div>
+                <div class="feriado" onclick="showModal('Inmaculado Concepción')">8</div>
+                <div class="day">9</div>
+                <div class="day">10</div>
+                <div class="day">11</div>
+                <div class="day">12</div>
+                <div class="day">13</div>
+                <div class="day">14</div>
+                <div class="day">15</div>
+                <div class="day">16</div>
+                <div class="day">17</div>
+                <div class="day">18</div>
+                <div class="day">19</div>
+                <div class="day">20</div>
+                <div class="day">21</div>
+                <div class="day">22</div>
+                <div class="day">23</div>
+                <div class="day">24</div>
+                <div class="feriado" onclick="showModal('Navidad')">25</div>
+                <div class="day">26</div>
+                <div class="day">27</div>
+                <div class="day">28</div>
+                <div class="day">29</div>
+                <div class="day">30</div>
+                <div class="day">31</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div id="modal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="modal-title"></h2>
+        <p id="modal-description"></p>
+    </div>
+
+</div>
+</body>
+</html>
