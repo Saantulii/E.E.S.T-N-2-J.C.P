@@ -1,0 +1,327 @@
+/* Importar la fuente Gupter desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&display=swap');
+
+/* Reiniciar márgenes para todos los elementos */
+*{ 
+    margin: 0; 
+    /* Reiniciar rellenos para todos los elementos */
+    padding: 0; 
+    /* Establecer el modelo de caja de borde */
+    box-sizing: border-box; 
+    /* Establecer la fuente predeterminada */
+    font-family: "Gupter", serif; 
+}
+
+/* Estilos generales para el cuerpo de la página */
+body{ 
+    /* Ancho del cuerpo */
+    width: 100%; 
+    /* Altura del cuerpo */
+    height: 100vh; 
+    /* Disposición en flexbox */
+    display: flex; 
+    /* Centrar contenido horizontalmente */
+    justify-content: center; 
+    /* Centrar contenido verticalmente */
+    align-items:center; 
+    /* Color de fondo del cuerpo*/
+    background-color: red;
+}
+
+/* Estilos para el contenedor principal */
+.container{ 
+    /* Borde negro para el contenedor */
+    border: 2px solid black; 
+    /* Ancho del contenedor */
+    width: 800px; 
+    /* Altura del contenedor */
+    height: 500px; 
+    /* Disposición en flexbox */
+    display: flex; 
+    /* Posición relativa */
+    position: relative; 
+    /* Color de fondo del container*/
+    background-color: white;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+}
+
+/* Estilos para el contenedor del formulario */
+.container-form{ 
+    /* Borde verde para el contenedor del formulario */
+    border: 2px solid black; 
+    /* Ancho del contenedor del formulario */
+    width: 100%; 
+    /* Ocultar desbordamiento */
+    overflow: hidden; 
+}
+
+/* Estilos para el formulario dentro del contenedor */
+.container-form form{ 
+    /* Altura del formulario */
+    height: 100%; 
+    /* Disposición en flexbox */
+    display: flex; 
+    /* Dirección de los elementos en columna */
+    flex-direction: column; 
+    /* Centrar elementos horizontalmente */
+    justify-content: center; 
+    /* Centrar elementos verticalmente */
+    align-items: center; 
+    /* Transición para transformaciones */
+    transition: transform 0.5s ease-in-out; 
+}
+
+/* Estilos para los títulos de los formularios */
+.container-form h2{ 
+    /* Tamaño de fuente */
+    font-size: 30px; 
+    /* Margen inferior */
+    margin-bottom: 20px; 
+}
+
+/* Estilos para la sección de redes sociales */
+.social-netwokrs{ 
+    /* Disposición en flexbox */
+    display: flex; 
+    /* Espacio entre elementos */
+    gap: 12px; 
+    /* Margen inferior */
+    margin-bottom: 25px; 
+}
+
+/* Estilos para los iconos de redes sociales */
+.social-netwokrs ion-icon{ 
+    /* Borde alrededor de los iconos */
+    border: 1px solid #c9cccb; 
+    /* Bordes redondeados */
+    border-radius: 6px; 
+    /* Espacio interno */
+    padding: 8px; 
+    /* Cambiar cursor al pasar sobre el icono */
+    cursor: pointer; 
+}
+
+/* Estilos para los textos pequeños */
+.container-form span{ 
+    /* Tamaño de fuente */
+    font-size: 12px; 
+    /* Margen inferior */
+    margin-bottom: 15px; 
+}
+
+/* Estilos para el contenedor de los campos de entrada */
+.container-input{ 
+    /* Ancho del contenedor */
+    width: 300px; 
+    /* Altura del contenedor */
+    height: 40px; 
+    /* Margen inferior */
+    margin-bottom: 10px; 
+    /* Disposición en flexbox */
+    display: flex; 
+    /* Centrar elementos horizontalmente */
+    justify-content: center; 
+    /* Centrar elementos verticalmente */
+    align-items: center; 
+    /* Espacio entre elementos */
+    gap: 8px; 
+    /* Espacio interno lateral */
+    padding: 0 15px; 
+    /* Color de fondo */
+    background-color: #EEEEEE; 
+}
+
+/* Estilos para los campos de entrada */
+.container-input input{ 
+    /* Sin borde */
+    border: none; 
+    /* Sin contorno al enfocar */
+    outline: none; 
+    /* Ancho del campo de entrada */
+    width: 100%; 
+    /* Altura del campo de entrada */
+    height: 100%; 
+    /* Usar el color de fondo del contenedor */
+    background-color: inherit; 
+}
+
+/* Estilos para los enlaces */
+.container-form a{ 
+    /* Color del texto */
+    color: black; 
+    /* Tamaño de fuente */
+    font-size: 14px; 
+    /* Margen inferior */
+    margin-bottom: 20px; 
+    /* Margen superior */
+    margin-top: 5px; 
+}
+
+/* Estilos para los botones */
+.button{ 
+    /* Ancho del botón */
+    width: 170px; 
+    /* Altura del botón */
+    height: 45px; 
+    /* Tamaño de fuente */
+    font-size: 15px; 
+    /* Sin borde */
+    border: none; 
+    /* Bordes redondeados */
+    border-radius: 5px; 
+    /* Cambiar cursor al pasar sobre el botón */
+    cursor: pointer; 
+    /* Margen superior */
+    margin-top: 10px; 
+    /* Color de fondo del botón */
+    background-color: #3ab397; 
+    /* Color del texto del botón */
+    color: white; 
+}
+
+.volver{
+    text-align: center;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: black;
+    border: none;
+    margin-top: 20px;
+    margin-left: 45%;
+    cursor: pointer;
+}
+.inicio{
+    text-align: center;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: black;
+    border: none;
+    margin-top: 20px;
+    margin-left: 45%;
+    cursor: pointer;
+}
+
+
+/* ANIMACIÓN DEL FORMULARIO */
+
+/* Estilo para el formulario de registro (sign-up) para moverlo fuera de la vista */
+.sign-up{ 
+    /* Mover hacia la izquierda fuera de la vista */
+    transform: translateX(-100%); 
+}
+
+
+/* Estilo para mover el formulario de inicio de sesión (sign-in) fuera de la vista cuando se activa la clase toggle */
+.container.toggle .sign-in{ 
+    /* Mover hacia la derecha fuera de la vista */
+    transform: translateX(100%); 
+}
+
+/* Estilo para mover el formulario de registro (sign-up) dentro de la vista cuando se activa la clase toggle */
+.container.toggle .sign-up{ 
+    /* Mover dentro de la vista */
+    transform: translateX(0); 
+}
+
+/* WELCOME SECTION */
+
+/* Estilos para el contenedor de bienvenida */
+.container-welcome { 
+    /* Posición absoluta */
+    position: absolute; 
+    /* Ancho del contenedor de bienvenida */
+    width: 50%; 
+    /* Altura del contenedor de bienvenida */
+    height: 100%; 
+    /* Disposición en flexbox */
+    display: flex; 
+    /* Alinear elementos verticalmente */
+    align-items: center; 
+    /* Mover fuera de la vista inicialmente */
+    transform: translateX(100%); 
+    /* Color de fondo del contenedor de bienvenida */
+    background-color: #3ab397; 
+    /* Transición para transformaciones */
+    transition: transform 0.5s ease-in-out, border-radius 0.5s ease-in-out; 
+    /* Ocultar desbordamiento */
+    overflow: hidden; 
+
+    border-radius: 50% 0 0 50%;
+}
+
+/* Mover el contenedor de bienvenida dentro de la vista cuando se activa la clase toggle */
+.container.toggle .container-welcome{ 
+    /* Mover dentro de la vista */
+    transform: translateX(0); 
+
+    border-radius: 0 50% 50% 0;
+
+    background-color: #3aa8ad;
+}
+
+/* Estilos para la sección de bienvenida */
+.container-welcome .welcome{ 
+    /* Posición absoluta */
+    position: absolute; 
+    /* Disposición en flexbox */
+    display: flex; 
+    /* Dirección de los elementos en columna */
+    flex-direction: column; 
+    /* Alinear elementos horizontalmente */
+    align-items: center; 
+    /* Espacio entre elementos */
+    gap: 20px; 
+    /* Espacio interno lateral */
+    padding: 0 50px; 
+    /* Color del texto */
+    color: white; 
+    /* Transición para transformaciones */
+    transition: transform 0.5s ease-in-out; 
+    /* Ocultar desbordamiento */
+    overflow: hidden;
+
+}
+
+/* Mover la sección de bienvenida de inicio de sesión fuera de la vista */
+.welcome-sign-in{ 
+    /* Mover hacia la derecha fuera de la vista */
+    transform: translateX(100%); 
+}
+
+/* Estilos para los títulos en la sección de bienvenida */
+.container-welcome h3{ 
+    /* Tamaño de fuente */
+    font-size: 40px; 
+}
+
+/* Estilos para los párrafos en la sección de bienvenida */
+.container-welcome p{ 
+    /* Tamaño de fuente */
+    font-size: 14px; 
+    /* Alineación del texto al centro */
+    text-align: center; 
+}
+
+/* Estilos para los botones en la sección de bienvenida */
+.container-welcome .button{ 
+    /* Borde blanco para el botón */
+    border: 2px solid white; 
+
+    background-color: transparent;
+}
+
+/* Mover la sección de bienvenida de inicio de sesión dentro de la vista cuando se activa la clase toggle */
+.container.toggle .welcome-sign-in{ 
+    /* Mover dentro de la vista */
+    transform: translateX(0); 
+}
+
+/* Mover la sección de bienvenida de registro fuera de la vista cuando se activa la clase toggle */
+.container.toggle .welcome-sign-up{ 
+    /* Mover hacia la izquierda fuera de la vista */
+    transform: translateX(-100%); 
+}

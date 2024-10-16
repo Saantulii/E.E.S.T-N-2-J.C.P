@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Cuenta</title>
+    <link rel="stylesheet" href="gmail.css">
+    <script src="gmail.js"> defer</script>
+</head>
+<body>
+    <h1>RECUPERAR CUENTA</h1>
+    <div class="container">
+        <h2>Ingrese su correo con el que se ha registrado</h2>
+        <form id="emailForm">
+            <input type="email" placeholder="Ingrese su correo" class="correo" id="correo" required>
+            <input type="text" placeholder="Ingrese un número" id="numero" required>
+            <textarea placeholder="Ingrese el texto" id="texto" required></textarea>
+            <div class="form__button">
+                <button type="submit" class="enviar">Enviar link</button>
+            </div>
+        </form>
+        <a class="Salir" href="pagina de empresa.html" target="_blank">Salir</a>
+    </div>
+
+    </div>
+
+    <script>
+
+        // npm install nodemailer
+
+        document.getElementById('emailForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const correo = document.getElementById('correo').value;
+    const numero = document.getElementById('numero').value;
+    const texto = document.getElementById('texto').value;
+
+    const response = await fetch('/send-email', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ correo, numero, texto })
+    });
+
+    if (response.ok) {
+        alert('MUY BIEN, YA TE LO MANDE😉');
+    } else {
+        alert('JAJAJAJAJA TUVISTE UN ERROR🤣');
+    }
+});
+
+const express = require('express');
+const nodemailer = require('nodemailer');
+const bodyParser = require('body-parser');
+
+const app = express();
+app.use(bodyParser.json());
+
+// Configuración de Nodemailer con Gmail
+const transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+        user: 'tuemail@gmail.com',  // Cambia a tu correo de Gmail
+        pass: 'tucontraseña'  // Cambia a tu contraseña de Gmail o usa app passwords
+    }
+});
+
+app.post('/send-email', (req, res) => {
+    const { correo, numero, texto } = req.body;
+
+    const mailOptions = {
+        from: 'tuemail@gmail.com', // Cambia a tu correo
+        to: correo,
+        subject: 'Recuperación de cuenta',
+        text: `Número: ${numero}\nTexto: ${texto}`
+    };
+
+    transporter.sendMail(mailOptions, function(error, info){
+        if (error) {
+            console.log(error);
+            res.status(500).send('JAJAJAJA TUVISTE UN ERROR');
+        } else {
+            console.log('Correo enviado: ' + info.response);
+            res.status(200).send('Correo enviado');
+        }
+    });
+});
+
+// Inicia el servidor
+app.listen(3000, () => {
+    console.log('Servidor corriendo en puerto 3000');
+});
+
+    </script>
+</body>
+</html>
